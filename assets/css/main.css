@@ -825,7 +825,7 @@ section,
 --------------------------------------------------------------*/
 .about {
   /* --background-color: #f4f4f4; */
-  background-image: url("backnosotors.png");
+  background-image: url(../imagenes/backnosotros.png);
 }
 
 .about .content h3 {

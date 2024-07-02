@@ -2026,6 +2026,27 @@ font-size: 80px;
   margin-top: 280px;
 }
 
+<<<<<<< HEAD
+=======
+.animacion {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  overflow: hidden; /* Oculta el texto que se desborde */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+}
+
+.animacion p {
+  animation: moverTexto 10s linear infinite; /* Nombre de la animación, duración, tipo de animación y repetición */
+}
+
+@keyframes moverTexto {
+  0% {
+      transform: translateX(0); /* Inicia desde la posición inicial (0px) */
+  }
+  100% {
+      transform: translateX(100%); /* Termina en la posición desplazada (100% del ancho del contenedor) */
+  }
+}
+>>>>>>> 8a039afb97b3d1705446e1fff869a49ac4534508
 
 
 /*--------------------------------------------------------------
@@ -3301,9 +3322,13 @@ font-size: 80px;
   font-style: normal;
   font-size: 50px;
   color: #ffffff;
+<<<<<<< HEAD
   padding-left: 50px;
   display: inline-block;
     padding-right: 50px; /* Espacio entre textos */
+=======
+  letter-spacing: 10px;
+>>>>>>> 8a039afb97b3d1705446e1fff869a49ac4534508
  }
 
  .heebo-basico-marcas{

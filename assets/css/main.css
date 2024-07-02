@@ -940,12 +940,6 @@ section,
   margin-top: 10px;
 }
 
-.about{
-  background-image: url(/assets/imagenes/backnosotros.png);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 @media (max-width: 768px) {
 

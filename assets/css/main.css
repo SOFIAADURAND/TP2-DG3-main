@@ -2017,6 +2017,26 @@ font-size: 80px;
   margin-top: 280px;
 }
 
+.animacion {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  overflow: hidden; /* Oculta el texto que se desborde */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+}
+
+.animacion p {
+  animation: moverTexto 10s linear infinite; /* Nombre de la animación, duración, tipo de animación y repetición */
+}
+
+@keyframes moverTexto {
+  0% {
+      transform: translateX(0); /* Inicia desde la posición inicial (0px) */
+  }
+  100% {
+      transform: translateX(100%); /* Termina en la posición desplazada (100% del ancho del contenedor) */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
@@ -3290,6 +3310,7 @@ font-size: 80px;
   font-style: normal;
   font-size: 50px;
   color: #ffffff;
+  letter-spacing: 10px;
  }
 
  .heebo-basico-marcas{

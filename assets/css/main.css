@@ -787,37 +787,46 @@ section,
 
 .clients {
   background-color: #1B1B1B;
-}
-
-.clients {
   padding: 20px 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 60px;
+
 }
 
-.clients .client-logo {
+/* .clients {
+  padding: 20px 0;
+} */
+
+/* .clients .client-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
+} */
 
-.clients .client-logo img {
+/* .clients .client-logo img {
   padding: 0px;
   max-width: 90%;
   transition: 0.3s;
   opacity: 0.5;
   filter: grayscale(100);
-}
-
+} */
+/* 
 .clients .client-logo img:hover {
   filter: none;
   opacity: 1;
-}
+} */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .clients .client-logo img {
     padding: 20px;
   }
-}
+} */
+
+
 
 
 /*--------------------------------------------------------------
@@ -2016,6 +2025,8 @@ font-size: 80px;
 .marca-titulo{
   margin-top: 280px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Recent Posts Section
@@ -3290,6 +3301,9 @@ font-size: 80px;
   font-style: normal;
   font-size: 50px;
   color: #ffffff;
+  padding-left: 50px;
+  display: inline-block;
+    padding-right: 50px; /* Espacio entre textos */
  }
 
  .heebo-basico-marcas{
@@ -3316,3 +3330,30 @@ font-size: 80px;
   flex-shrink: 0;
   align-items: center;
  }
+
+ .animacion{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+ } 
+
+ .texto-carrousel{
+  /* overflow: hidden; */
+    white-space: nowrap;
+    /* width: 80%;  */
+ }
+
+.text-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}

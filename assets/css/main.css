@@ -826,6 +826,9 @@ section,
 .about {
   /* --background-color: #f4f4f4; */
   background-image: url(../imagenes/backnosotros.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about .content h3 {

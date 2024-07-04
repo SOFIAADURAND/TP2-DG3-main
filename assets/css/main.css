@@ -66,7 +66,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: rgba(236, 194, 125, 0.173);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -147,9 +147,9 @@ h6 {
 .index-page.scrolled .header {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(2px); /* Para soporte en navegadores WebKit */
-  background: rgb(144, 219, 236, 10%);
+  background: rgba(236, 194, 125, 0.173);
   --heading-color: #FFA63A;
-  --nav-color: rgb(22, 23, 33, 10%);
+  --nav-color: rgba(0, 0, 0, 0.2);
   --nav-hover-color: #FFA63A;
 }
 
@@ -204,6 +204,10 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-family: "minion-pro", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
   }
 
   .navmenu .dropdown ul {
@@ -1024,7 +1028,7 @@ font-size: 80px;
   padding-top: 40px;
 }
 
-.services .service-item:before {
+/* .services .service-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1032,9 +1036,9 @@ font-size: 80px;
   right: 0;
   height: 2px;
   background: color-mix(in srgb, var(--default-color), transparent 90%);
-}
+} */
 
-.services .service-item::after {
+/* .services .service-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1043,7 +1047,7 @@ font-size: 80px;
   height: 2px;
   background: var(--accent-color);
   border-right: 5px solid var(--background-color);
-}
+} */
 
 .services .service-item .icon {
   width: 48px;
@@ -1061,7 +1065,7 @@ font-size: 80px;
   position: relative;
 }
 
-.services .service-item .icon:before {
+/* .services .service-item .icon:before {
   position: absolute;
   content: "";
   height: 30px;
@@ -1072,7 +1076,7 @@ font-size: 80px;
   bottom: -15px;
   right: -15px;
   transition: 0.3s;
-}
+} */
 
 .services .service-item .title {
   font-weight: 700;
@@ -1149,6 +1153,7 @@ font-size: 80px;
   font-weight: 700;
   font-size: 26px;
 }
+
 
 .features .features-item .btn-get-started {
   background-color: var(--accent-color);
@@ -1373,10 +1378,39 @@ font-size: 80px;
 
 .pricing .icon {
   margin: 30px auto 20px auto;
-  width: 70px;
-  height: 70px;
-  background: var(--accent-color);
-  border-radius: 50%;
+  width: 218px;
+  height: 117px;
+  /* background: var(--accent-color); */
+  background-image: url(../imagenes/Cursito1.png);
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.pricing .icon2 {
+  margin: 30px auto 20px auto;
+  width: 216px;
+  height: 117px;
+  /* background: var(--accent-color); */
+  background-image: url(../imagenes/cusito2.png);
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.pricing .icon3 {
+  margin: 30px auto 20px auto;
+  width: 216px;
+  height: 117px;
+  /* background: var(--accent-color); */
+  background-image: url(../imagenes/cursito3.png);
+  /* border-radius: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1457,7 +1491,8 @@ font-size: 80px;
 }
 
 .pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 70%); */
+  color: #df1529;
 }
 
 .pricing ul .na span {
@@ -1504,6 +1539,13 @@ font-size: 80px;
 .pricing .featured {
   z-index: 10;
   border: 3px solid var(--accent-color);
+  background-color: #ffffff;
+}
+
+.pricing .borde {
+  z-index: 10;
+  border: 3px solid var(--heading-color);
+  filter: blur(3px);
 }
 
 @media (min-width: 992px) {

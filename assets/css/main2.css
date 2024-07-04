@@ -66,7 +66,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: rgb(91, 189, 232,30%);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -136,9 +136,9 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --backdrop-filter: blur(3px);
-  --background-color: rgb(144, 219, 236, 10%);
+  --background-color: rgb(91, 189, 232,30%);
   --heading-color: #FFA63A;
-  --nav-color: rgba(255, 255, 255, 30%);
+  --nav-color: rgba(0, 0, 0, 0.3);
   --nav-hover-color: #FFA63A;
 }
 
@@ -149,7 +149,7 @@ h6 {
   -webkit-backdrop-filter: blur(2px); /* Para soporte en navegadores WebKit */
   background: rgb(144, 219, 236, 10%);
   --heading-color: #FFA63A;
-  --nav-color: rgb(22, 23, 33, 10%);
+  --nav-color: rgb(22, 23, 33, 20%);
   --nav-hover-color: #FFA63A;
 }
 
@@ -204,6 +204,10 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-family: "minion-pro", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
   }
 
   .navmenu .dropdown ul {
@@ -1018,7 +1022,7 @@ font-size: 80px;
   padding-top: 40px;
 }
 
-.services .service-item:before {
+/* .services .service-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1037,7 +1041,7 @@ font-size: 80px;
   height: 2px;
   background: var(--accent-color);
   border-right: 5px solid var(--background-color);
-}
+} */
 
 .services .service-item .icon {
   width: 48px;
@@ -1055,7 +1059,7 @@ font-size: 80px;
   position: relative;
 }
 
-.services .service-item .icon:before {
+/* .services .service-item .icon:before {
   position: absolute;
   content: "";
   height: 30px;
@@ -1066,7 +1070,7 @@ font-size: 80px;
   bottom: -15px;
   right: -15px;
   transition: 0.3s;
-}
+} */
 
 .services .service-item .title {
   font-weight: 700;
@@ -3330,3 +3334,8 @@ font-size: 80px;
     width: 1095px;
     height: 617px;
   }
+
+  .hnuevo { 
+  color: #ffffff;
+  font-family: var(--heading-font);
+}

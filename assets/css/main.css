@@ -3399,3 +3399,71 @@ font-size: 80px;
       transform: translateX(-100%);
   }
 }
+
+
+/*--------------------------------------------------------------
+# contador section
+--------------------------------------------------------------*/
+.contador .body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.contador .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.contador .countdown {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.contador .countdown h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #FFA63A;
+}
+
+.contador #countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contador .time-box {
+  text-align: center;
+  font-family: "heebo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #161721;
+}
+
+.contador .time-box span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFA63A;
+  text-align: center;
+  font-family: "heebo", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.contador .image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.contador .image-container img {
+  max-width: 130%;
+  height: auto;
+  border-radius: 8px;
+}

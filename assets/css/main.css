@@ -3405,17 +3405,21 @@ font-size: 80px;
 # contador section
 --------------------------------------------------------------*/
 .contador .body {
-  font-family: Arial, sans-serif;
+  font-family: "minion-pro", serif;
   background-color: #ffffff;
 }
+
+/* .contador section {
+  padding: 20px;
+} */
 
 .contador .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px;
+  max-width: 1050px;
+  /* margin: 50px auto; */
+  /* padding: 20px; */
   background-color: #ffffff;
 }
 
@@ -3423,6 +3427,7 @@ font-size: 80px;
   flex: 1;
   text-align: center;
   padding: 20px;
+  padding-right: 100px;
 }
 
 .contador .countdown h2 {
@@ -3465,5 +3470,5 @@ font-size: 80px;
 .contador .image-container img {
   max-width: 130%;
   height: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }

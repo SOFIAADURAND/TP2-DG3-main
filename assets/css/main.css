@@ -3396,29 +3396,31 @@ font-size: 80px;
  }
 
  .animacion{
-  display: flex;
-  justify-content: center;
-    align-items: center;
+    margin: auto;
+    overflow: hidden; 
  } 
 
- .texto-carrousel{
-  /* overflow: hidden; */
-    white-space: nowrap;
+.animacion .texto-carrousel{
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
+  
     /* width: 80%;  */
  }
 
 .text-wrapper {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
+  flex: 0 0 auto;
+  padding: 0 90px;
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(0%);
+    -webkit-animation: translateX(0);
+      transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    -webkit-animation: translateX(calc(-150px * 12));
+      transform: translateX(calc(-150px * 12));
   }
 }
 

@@ -926,7 +926,7 @@ section,
 
 .about .fondo1{
   background-color: rgb(255, 255, 255, 0%);
-  background-image: url(../imagenes/1nosotros1.png);
+  background-image: url("../imagenes/1nosotros1.png");
   padding: 65px 40px;
   position: center;
   width: 361px;
@@ -935,7 +935,7 @@ section,
 
 .about .fondo2{
   background-color: rgb(255, 255, 255, 0%);
-  background-image: url(../imagenes/nosotros2.png);
+  background-image: url("../imagenes/nosotros2.png");
   padding: 65px 40px;
   position: center;
   width: 361px;
@@ -1154,7 +1154,7 @@ font-size: 80px;
 --------------------------------------------------------------*/
 
 .features .backgraund {
-  background-image: url(../imagenes/backInicioTaller.png);
+  background-image: url("../imagenes/backInicioTaller.png");
 } 
 
 .features .features-item {
@@ -1163,6 +1163,37 @@ font-size: 80px;
 
 .features .features-item+.features-item {
   margin-top: 100px;
+}
+
+.features .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.features .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 19px;
+}
+
+.features .content .read-more:hover i {
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1403,7 +1434,7 @@ font-size: 80px;
   width: 218px;
   height: 117px;
   /* background: var(--accent-color); */
-  background-image: url(../imagenes/Cursito1.png);
+  background-image: url("../imagenes/Cursito1.png");
   /* border-radius: 50%; */
   display: flex;
   align-items: center;
@@ -1417,7 +1448,7 @@ font-size: 80px;
   width: 216px;
   height: 117px;
   /* background: var(--accent-color); */
-  background-image: url(../imagenes/cusito2.png);
+  background-image: url("../imagenes/cusito2.png");
   /* border-radius: 50%; */
   display: flex;
   align-items: center;
@@ -1431,7 +1462,7 @@ font-size: 80px;
   width: 216px;
   height: 117px;
   /* background: var(--accent-color); */
-  background-image: url(../imagenes/cursito3.png);
+  background-image: url("../imagenes/cursito3.png");
   /* border-radius: 50%; */
   display: flex;
   align-items: center;
@@ -3388,7 +3419,7 @@ font-size: 80px;
  }
 
  .VideoBoock {
-  background-image: url(../imagenes/videoBoock.png);
+  background-image: url("../imagenes/videoBoock.png");
   width: 1095px;
   height: 617px;
   flex-shrink: 0;

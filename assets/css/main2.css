@@ -923,7 +923,7 @@ section,
 
 .about .fondo1{
   background-color: rgb(255, 255, 255, 0%);
-  background-image: url(../imagenes/1nosotros1.png);
+  background-image: url("../imagenes/1nosotros1.png");
   padding: 65px 40px;
   position: center;
   width: 361px;
@@ -932,7 +932,7 @@ section,
 
 .about .fondo2{
   background-color: rgb(255, 255, 255, 0%);
-  background-image: url(../imagenes/nosotros2.png);
+  background-image: url("../imagenes/nosotros2.png");
   padding: 65px 40px;
   position: center;
   width: 361px;
@@ -976,7 +976,7 @@ section,
 }
 
 .about{
-  background-image: url(/assets/imagenes/backnosotros.png);
+  background-image: url("/assets/imagenes/backnosotros.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;

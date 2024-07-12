@@ -11,7 +11,7 @@
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #161721; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #5BBDE8; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #51b4de; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #FFA63A; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
@@ -783,38 +783,39 @@ section,
   .hero p {
     font-size: 18px;
   }
+
+  .hero .minion {
+    font-size: 90px;
+  }
+  
+  .hero .minion-italic {
+    font-size: 90px;
+  }
+  
+  .hero .Minionherocopy {
+    font-size: 90%;
+  }
+  
+  .hero .bajadaHeebo {
+    font-size: 50%;
+  }
+  
+  .hero img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
 }
 
-.hero .minion {
-  font-size: 90px;
-}
 
-.hero .minion-italic {
-  font-size: 90px;
-}
-
-.hero .Minionherocopy {
-  font-size: 90%;
-}
-
-.hero .bajadaHeebo {
-  font-size: 50%;
-}
-
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero p {
-  font-size: 18px;
-}
-}
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -1114,7 +1115,7 @@ font-size: 80px;
 }
 
 .services .service-item .title a:hover {
-  color: #5BBDE8;
+  color: #51b4de;
 }
 
 .services .service-item .description {
@@ -1581,7 +1582,7 @@ font-size: 80px;
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: #5BBDE8;
+  color: #51b4de;
   padding-right: 5px;
 }
 

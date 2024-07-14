@@ -700,20 +700,28 @@ section,
   width: 100%;
   min-height: 100vh;
   position: relative;
+  margin: 0;
   padding: 160px 0 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.hero img {
+.hero .container-port{
+  /* display: flex;
+  justify-content: flex-end; Alineación a la derecha por defecto  */
+  height: 110%;
+  position:absolute;
+  width: 100%;
+}
+.hero .portada {
   position: absolute;
   inset: 0;
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  
 }
 
 .hero:before {
@@ -736,6 +744,24 @@ section,
   font-size: 44px;
   font-weight: 700;
 }
+.hero .minion{
+  font-family: "minion-pro", serif;
+ font-weight: 500;
+ font-style: normal;
+ font-size: 120px;
+ color: #ffffff;
+ line-height: 1;
+ }
+ 
+ .hero .minion-italic{
+  font-family: "minion-pro", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 120px;
+  color: #ffffff;
+  line-height: 1;
+ }
+
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -777,11 +803,13 @@ section,
 
 @media (max-width: 768px) {
   .hero .minion {
+
     font-size: 90px;
   }
 
   .hero .minion-italic {
     font-size: 90px;
+  display: flex;
   }
 
   .hero .Minionherocopy {
@@ -792,18 +820,19 @@ section,
     font-size: 50%;
   }
 
-  .hero img {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+  .hero .container-port{
+ padding-right: 100%;
+  }
+  .hero .portada {
+    overflow: visible;
+    padding-right: 429px;
   }
 
   .hero p {
     font-size: 18px;
+  }
+  .hero .Minionherocopy{
+    color:#FFFFFF
   }
 }
 
@@ -1080,11 +1109,13 @@ font-size: 80px;
 }
 
 .services .service-item .icon i {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color: #FFFFFF;
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
   position: relative;
+  fill: #FFFFFF;
 }
 
 /* .services .service-item .icon:before {
@@ -3214,25 +3245,6 @@ font-size: 80px;
 }
 
 /* <<----------------------------- MIS COSAS O NO SE Q PERO ESO --------------------------------------------------------------------------------->>> */
-
-.minion {
- font-family: "minion-pro", serif;
- font-weight: 500;
- font-style: normal;
- font-size: 120px;
- color: #ffffff;
- line-height: 1;
- }
-
-.minion-italic{
-  font-family: "minion-pro", serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 120px;
-  color: #ffffff;
-  line-height: 1;
- }
-
 .bajadaHeebo{
  font-family: "heebo", sans-serif;
  font-weight: 400;

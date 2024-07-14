@@ -3452,23 +3452,27 @@ font-size: 80px;
  }
 
  .animacion{
+  display: flex;
     margin: auto;
     overflow: hidden; 
+    width: 100px;
+    height: auto;
  } 
 
-.animacion .texto-carrousel{
-  display: flex;
-  animation: scroll 35s linear infinite;
-  -webkit-animation: scroll 35s linear infinite;
-  
-    /* width: 80%;  */
+.animacion .container-slider{
+ display: flex;
+  /* animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite; */
+  width: calc(200px * 14);
  }
 
-.text-wrapper {
-  flex: 0 0 auto;
-  padding: 0 90px;
+.animation .slide  {
+width: 100px;
 }
 
+.animation .slide img{
+  width:100%;
+}
 @keyframes scroll {
   0% {
     -webkit-animation: translateX(0);

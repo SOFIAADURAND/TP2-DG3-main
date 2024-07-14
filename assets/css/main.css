@@ -2097,6 +2097,11 @@ font-size: 80px;
 .marca .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+.marca .txt-centrado{
+  display: flex;
+  justify-content: center;
+  margin-top: 238px;
+}
 
 @media (max-width: 767px) {
 
@@ -2108,6 +2113,14 @@ font-size: 80px;
   .marca .marca-item {
     margin: 15px;
   }
+  .marca .TITULO4,.marca .TITULO4-italic{
+    font-size: 50px;
+  }
+  .marca .txt-centrado{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
 }
 
 .marca{

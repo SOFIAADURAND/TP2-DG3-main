@@ -721,7 +721,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  
+
 }
 
 .hero:before {
@@ -752,7 +752,7 @@ section,
  color: #ffffff;
  line-height: 1;
  }
- 
+
  .hero .minion-italic{
   font-family: "minion-pro", serif;
   font-weight: 700;
@@ -853,21 +853,42 @@ section,
 /* Contenedor de la animación */
 .clients .animacion {
   overflow: hidden; /* Oculta el desbordamiento de los elementos hijos */
+
+    /* margin: auto;
+    overflow: hidden;
+    width: 100px;
+    height: auto; */
 }
 
 /* Contenedor del slider */
-.clients .container-slider {
+.clients .animacion .container-slider {
   display: flex; /* Utiliza flexbox para los elementos hijos */
-  animation: desplazar 20s linear infinite; /* Animación de movimiento horizontal */
+   
 }
 
 /* Estilo para cada slide (cada logo) */
-.clients .slide {
-  flex: 0 0 auto; /* No crece ni encoge, tamaño automático */
+.clients  .slide {
+  flex: auto; /* No crece ni encoge, tamaño automático */
   display: flex; /* Para alinear los elementos hijos (logos) */
-  justify-content: space-between; /* Espaciado entre elementos */
-  width: 600%; /* Espacio para que quepan los logos */
+  /* justify-content: space-between;  */ /* Espaciado entre elementos */
+  width: 20%; /* Espacio para que quepan los logos */
   animation: desplazar 20s linear infinite; /* Animación */
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(200px * 14);
+}
+
+/* .animation .slide img{
+  width:100%;
+} */
+@keyframes scroll {
+  0% {
+    -webkit-animation: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+    -webkit-animation: translateX(calc(-150px * 12));
+      transform: translateX(calc(-150px * 12));
+  }
 }
 
 
@@ -890,7 +911,7 @@ section,
   opacity: 0.5;
   filter: grayscale(100);
 } */
-/* 
+/*
 .clients .client-logo img:hover {
   filter: none;
   opacity: 1;
@@ -1207,7 +1228,7 @@ font-size: 80px;
 
 .features .backgraund {
   background-image: url("../imagenes/backInicioTaller.png");
-} 
+}
 
 .features .features-item {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -2172,7 +2193,7 @@ font-size: 80px;
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  
+
 }
 
 .marca{
@@ -3092,7 +3113,7 @@ font-size: 80px;
 # Starter Section Section
 --------------------------------------------------------------*/
 /* .starter-section {
-  /* Add your styles here 
+  /* Add your styles here
 } */
 
 /*--------------------------------------------------------------
@@ -3472,38 +3493,7 @@ font-size: 80px;
   align-items: center;
  }
 
- .animacion{
-  display: flex;
-    margin: auto;
-    overflow: hidden; 
-    width: 100px;
-    height: auto;
- } 
 
-.animacion .container-slider{
- display: flex;
-  /* animation: scroll 35s linear infinite;
-  -webkit-animation: scroll 35s linear infinite; */
-  width: calc(200px * 14);
- }
-
-.animation .slide  {
-width: 100px;
-}
-
-.animation .slide img{
-  width:100%;
-}
-@keyframes scroll {
-  0% {
-    -webkit-animation: translateX(0);
-      transform: translateX(0);
-  }
-  100% {
-    -webkit-animation: translateX(calc(-150px * 12));
-      transform: translateX(calc(-150px * 12));
-  }
-}
 
 
 /*--------------------------------------------------------------

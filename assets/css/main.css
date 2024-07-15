@@ -1260,7 +1260,6 @@ font-size: 80px;
 }
 
 
-/* Estilos para pantallas hasta 768px de ancho */
 @media (max-width: 768px) {
   .services .section-title {
     text-align: center; /* Centra el texto del título */
@@ -3669,10 +3668,10 @@ font-size: 80px;
   line-height: 1;
  }
 
- .VideoBoock {
+ .Foco .VideoBoock {
   background-image: url("../imagenes/videoBoock.png");
   width: 1095px;
-  height: 617px;
+  height: 317px;
   flex-shrink: 0;
   align-items: center;
  }

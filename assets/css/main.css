@@ -704,12 +704,18 @@ section,
 --------------------------------------------------------------*/
 .hero {
   --default-color: #ffffff;
-  --background-color: #000000;
+  /* --background-color: #000000; */
+  background-image: url("../imagenes/HERO1.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
   --heading-color: #ffffff;
   width: 100%;
   min-height: 100vh;
   position: relative;
-  margin: 0;
+  /* margin: 0; */
   padding: 160px 0 80px 0;
   display: flex;
   align-items: center;
@@ -829,13 +835,19 @@ section,
     font-size: 50%;
   }
 
-
   .hero .container-port{
  padding-right: 100%;
   }
-  .hero .portada {
+  /* .hero .portada {
     overflow: visible;
     padding-right: 429px;
+  } */
+
+ .hero {
+  background-image: url("../imagenes/mobile.png");
+  background-position: center;
+
+  background-repeat: no-repeat;
   }
 
   .hero p {
@@ -844,6 +856,8 @@ section,
   .hero .Minionherocopy{
     color:#FFFFFF
   }
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -1066,6 +1080,19 @@ section,
   .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
     margin-top: 10;
   }
+
+  .about .TITULO1{
+    font-size: 45px;
+  }
+
+  .TITULO1-italic{
+    font-size: 45px;
+  }
+
+  .about .heebo-basico{
+    font-size: 15px;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -1232,6 +1259,53 @@ font-size: 80px;
   margin-top: 280px;
 }
 
+
+/* Estilos para pantallas hasta 768px de ancho */
+@media (max-width: 768px) {
+  .services .section-title {
+    text-align: center; /* Centra el texto del título */
+    font-size: 50%;
+  }
+
+  .services .container {
+    padding-left: 15px; /* Añade un padding izquierdo para dar espacio */
+    padding-right: 15px; /* Añade un padding derecho para dar espacio */
+  }
+
+  .services .service-item {
+    padding-top: 20px; /* Reduce el padding top */
+    padding-bottom: 20px; /* Añade padding bottom para separar los items */
+  }
+
+  .services .service-item .icon {
+    margin-right: 20px; /* Reduce el margen derecho del ícono */
+  }
+
+  .services .service-item .description {
+    font-size: 14px; /* Reduce el tamaño del texto de descripción */
+  }
+
+  .services .titulo-italic {
+    margin-top: 80px; /* Ajusta el margen superior del título */
+  }
+
+  .services .TITULO3-italic-naranja {
+    font-size: 55px;
+  }
+
+  .services .TITULO3b {
+    font-size: 55px;
+  }
+
+  .services .Minion-bajadasb {
+    font-size: 15px;
+  }
+
+  .services .descriptionb {
+    font-size: 12px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1282,6 +1356,20 @@ font-size: 80px;
 @media (max-width: 768px) {
   .features .features-item+.features-item {
     margin-top: 40px;
+  }
+  .features .TITULO2 {
+    font-size: 55px;
+  }
+
+  .features .TITULO2-italic {
+    font-size: 55px;
+  }
+
+  .features .Minion-bajadas {
+    font-size: 15px;
+  }
+  .features .Minion-basico {
+    font-size: 15px;
   }
 }
 
@@ -1430,10 +1518,27 @@ font-size: 80px;
   }
 }
 
-.portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
+@media (max-width: 768px) {
+  .portfolio .TITULO2 {
+    font-size: 55px;
+  }
+  
+  .portfolio .TITULO2-italic {
+    font-size: 55px;
+  }
+  
+  .portfolio .Minion-bajadas {
+    font-size: 15px;
+  }
+  .portfolio .Minion-basico {
+    font-size: 15px;
+  }
 }
+
+  .portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+  }
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
@@ -1690,6 +1795,21 @@ font-size: 80px;
   }
 }
 
+@media (max-width: 768px) {
+  .pricing .TITULO2 {
+    font-size: 55px;
+  }
+  
+  .pricing .TITULO2-italic {
+    font-size: 55px;
+  }
+  
+  .pricing .Minion-bajadas {
+    font-size: 17px;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -1820,6 +1940,26 @@ font-size: 80px;
 @media (max-width: 1024px) {
   .team .member .member-img {
     margin: 0 60px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .team .TITULO2b{
+  font-size: 55px;
+  text-align: center;
+  }
+  .team .p {
+  font-size: 10px;
+  }
+
+  .team .TITULO2-italic{
+  font-size: 55px;
+  text-align: left;
+  }
+
+  .team .Minion-bajadasb{
+  font-size: 20px;
   }
 }
 
@@ -1954,7 +2094,13 @@ font-size: 80px;
   border: 2px solid #161721;
 }
 
-
+@media (max-width: 768px) {
+  
+  .call-to-action .p {
+    font-size: 1px;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -2072,6 +2218,14 @@ font-size: 80px;
   .testimonials .testimonial-item {
     margin: 15px;
   }
+}
+
+@media (max-width: 768px) {
+  
+  .testimonials .heebo-basicob {
+    font-size: 14px;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -2204,7 +2358,12 @@ font-size: 80px;
     margin-bottom: 25px;
   }
 
+  .marca .heebo-basico-marcas {
+    font-size: 10px;
+  }
+
 }
+
 
 .marca{
   background-image: url("../imagenes/backmarcas.png");
@@ -2400,6 +2559,21 @@ font-size: 80px;
 
 .contact {
   background-color: #161721;
+}
+
+@media (max-width: 768px) {
+  
+  .contact .TITULO2-italic {
+    font-size: 55px;
+  }
+  .contact .TITULO2b {
+    font-size: 55px;
+  }
+  .contact .Minion-bajadasb {
+    font-size: 15px;
+  }
+  
+  
 }
 
 /*--------------------------------------------------------------
@@ -3578,3 +3752,38 @@ font-size: 80px;
   height: auto;
   /* border-radius: 8px; */
 }
+
+/* Estilos para pantallas hasta 768px de ancho */
+@media (max-width: 768px) {
+  .contador .container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .contador .countdown {
+    padding-right: 0;
+    margin-bottom: 20px; /* Añadido para separación entre countdown y la imagen */
+  }
+
+  .contador {
+    padding: 0px;
+  }
+
+  .contador .image-container {
+    order: -1; /* Cambia el orden para que la imagen aparezca arriba */
+  }
+
+  .contador .image-container img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .contador .time-box {
+    margin-bottom: 10px; /* Espaciado entre los elementos de countdown */
+  }
+
+  .contador .TITULO1b{
+    font-size: 40px;
+  }
+}
+

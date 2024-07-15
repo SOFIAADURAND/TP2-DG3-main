@@ -131,10 +131,10 @@ h6 {
   .header .navmenu {
     order: 3;
   }
-  
+
   .header .header-marca{
-   display: none;
-  }
+    display: none;
+   }
 }
 
 .scrolled .header {
@@ -1808,6 +1808,42 @@ font-size: 80px;
   }
   
 }
+
+@media (max-width: 768px) {
+  .pricing .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing .col-lg-4 {
+    display: none; 
+  }
+
+  .pricing .col-lg-4:nth-child(2) {
+    display: block;
+  }
+
+  .pricing .col-lg-4:nth-child(2) .pricing-item {
+    padding: 40px; 
+    box-shadow: none; 
+    border: 3px solid var(--accent-color); 
+    border-radius: 15px;
+  }
+
+  .pricing .col-lg-4:nth-child(2) .pricing-item h4 {
+    font-size: 36px; 
+    margin-bottom: 15px;
+  }
+
+  .pricing .col-lg-4:nth-child(2) .pricing-item ul {
+    padding: 10px 0; 
+  }
+
+  .pricing .col-lg-4:nth-child(2) .pricing-item .buy-btn {
+    padding: 10px 30px; 
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Faq Section

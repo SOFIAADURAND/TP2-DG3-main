@@ -1141,6 +1141,95 @@ font-size: 80px;
   height: 172vh;
 }
 
+.titulo-italic{
+  margin-top: 280px;
+}
+
+
+/*--------------------------------------------------------------
+# Foco Section
+--------------------------------------------------------------*/
+.Foco .service-item {
+  position: relative;
+  padding-top: 40px;
+}
+.Foco .container-centerr {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100vh;
+}
+
+/* .services .service-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.services .service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--accent-color);
+  border-right: 5px solid var(--background-color);
+} */
+
+.Foco .service-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-right: 50px;
+  line-height: 0;
+}
+
+.Foco .service-item .icon i {
+  color:rgb(255, 255, 255, 50%);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+/* .services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 50px;
+  z-index: 1;
+  bottom: -15px;
+  right: -15px;
+  transition: 0.3s;
+} */
+
+.Foco .service-item .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.Foco .service-item .title a {
+  color: #FFA63A;
+}
+
+.Foco .service-item .title a:hover {
+  color: #51b4de;
+}
+
+.Foco .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+
 .services2{
   background-image: url("../imagenes/backBoock.png");
   background-position: top;
@@ -1152,6 +1241,7 @@ font-size: 80px;
 .titulo-italic{
   margin-top: 280px;
 }
+
 
 /*--------------------------------------------------------------
 # Features Section
